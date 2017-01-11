@@ -40,10 +40,10 @@ do {
 ```
 * 5.需要在屏幕上显示通过设备摄像头捕捉的视频，通过AVCaptureVideoPreviewLayer实现。在do-catch block中插入代码
 ```swift
-videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
-videoPreviewLayer?.frame = view.layer.frame
-view.layer.addSublayer(videoPreviewLayer!)
+  videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
+  videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
+  videoPreviewLayer?.frame = view.layer.frame
+  view.layer.addSublayer(videoPreviewLayer!)
 ```
 * 6.通过调用startRunning()方法启动视频捕获.
 ```swift
@@ -69,7 +69,10 @@ if let qrCodeFrameView = qrCodeFrameView {
 实现代理方法
 optional public func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!)
 ```
-
+* 如果是真机测试，还需要在Info.plist加入以下字段。
+```swift
+Privacy - Camera Usage Description
+```
 
 # Requirements
 
