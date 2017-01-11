@@ -2,8 +2,8 @@
 //  QRCodeViewController.swift
 //  QRCodeReader
 //
-//  Created by Simon Ng on 13/10/2016.
-//  Copyright © 2016 AppCoda. All rights reserved.
+//  Created by Crazy on 10/1/2017.
+//  Copyright © 2017 Crazy. All rights reserved.
 //
 
 import UIKit
